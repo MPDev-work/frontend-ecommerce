@@ -1,0 +1,12 @@
+@import 'tailwindcss';
+
+@font-face {
+  font-family: 'Inter';
+  src: url('/src/fonts/Inter-VariableFont_opsz\,wght.ttf') format('TrueType');
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  font-family: 'Inter', sans-serif;
+}
