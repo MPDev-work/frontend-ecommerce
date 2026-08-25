@@ -1,10 +1,13 @@
-import IndexPage from './pages/client/home/IndexPage';
+import AppRoute from './routes/AppRoute';
+import { BrowserRouter } from 'react-router-dom';
+import NavBar from './components/layout/NavBar';
 
 function App() {
   return (
-    <>
-      <IndexPage />
-    </>
+    <BrowserRouter>
+      <NavBar />
+      <AppRoute />
+    </BrowserRouter>
   );
 }
 
