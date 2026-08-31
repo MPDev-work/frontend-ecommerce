@@ -75,11 +75,11 @@ function Brand() {
   const move = isNext / 5;
 
   return (
-    <div className="relative w-screen h-16 flex items-center overflow-hidden m-2.5">
+    <div className="relative z-50 w-screen h-20 flex items-center overflow-hidden">
       <div
         id="brandWidth"
         style={{ translate: `-${isNext}px 0px` }}
-        className={`absolute z-0 left-20 w-max h-full flex items-center transition`}
+        className={`absolute z-0 left-20 w-max h-16 flex items-center transition`}
       >
         {brands.map((brand) => {
           return (

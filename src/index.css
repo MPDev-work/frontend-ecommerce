@@ -10,3 +10,8 @@
 * {
   font-family: 'Inter', sans-serif;
 }
+
+body,
+html {
+  scrollbar-width: thin;
+}

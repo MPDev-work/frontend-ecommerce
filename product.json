@@ -1,0 +1,13 @@
+    {
+        "id" : ,
+        "title" : "",
+        "src" : "", // images
+        "price" : ,
+        "disc" : , // 50 etc
+        "stock" : ,
+        "size" : [], // 250, 300, 500, for the accessories ...
+        "skintype" : [],
+        "storename" : "", // weyoung admin can select either weyoung Phka ...
+        "freedelivery" : "", // true || false
+
+    }
