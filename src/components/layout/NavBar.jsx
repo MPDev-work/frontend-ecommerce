@@ -1,9 +1,9 @@
 import { User, Heart, Handbag, Search } from 'lucide-react';
-import { useState } from 'react';
+// import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 function NavBar() {
-  const [isOpenSearch, setIsOpenSearch] = useState(false);
+  // const [isOpenSearch, setIsOpenSearch] = useState(false);
   return (
     <div className="relative w-screen h-max">
       <nav className="fixed top-0 inset-x-0 h-12 z-[999] bg-white flex justify-between items-center px-5">
@@ -26,7 +26,7 @@ function NavBar() {
         </ul>
         <ul className="flex items-center gap-8">
           <Search
-            onClick={() => setIsOpenSearch((prev) => !prev)}
+            // onClick={() => setIsOpenSearch((prev) => !prev)}
             size={20}
             className="text-black cursor-pointer"
           />

@@ -1,8 +1,6 @@
 import heroBanner from '../../../assets/heroBanner/Gemini_Generated_Image_v24sc5v24sc5v24s.jpg';
 import heroBannerSolid from '../../../assets/heroBanner/Gemini_Generated_Image_v24sc5v24sc5v24s.png';
 import CategoryDemo from '../../../assets/banner/imgi_478_6c6c6b22-500d-4620-be4d-d26cf7932599.webp';
-// import HeroVideo from '../../../assets/video/heroVideo.mp4';
-// import Brand from '../../../components/layout/Brand';
 import collectionBanner from '../../../assets/collection/anua-banner.webp';
 import collection2 from '../../../assets/collection/MainBanner_PC_07_2.webp';
 import collection3 from '../../../assets/collection/ImageSlider3.png';
@@ -15,70 +13,39 @@ import { Link } from 'react-router-dom';
 import { ExternalLink, ChevronLeft, ChevronRight } from 'lucide-react';
 import { useState } from 'react';
 
-// const Promotion = () => {
-//   const sectionRef = useRef(null);
-//   const [isStuck, setIsStuck] = useState(true);
-
-//   useEffect(() => {
-//     const section = sectionRef.current;
-//     if (!section) return;
-
-//     const handleScroll = () => {
-//       const { bottom } = section.geotBoundingClientRect();
-//       setIsStuck(bottom > window.innerHeight);
-//     };
-
-//     handleScroll();
-//     window.addEventListener('scroll', handleScroll, { passive: true });
-//     return () => window.removeEventListener('scroll', handleScroll);
-//   }, []);
-
-//   const pos = isStuck ? 'fixed' : 'absolute';
-
-//   return (
-//     <section
-//       ref={sectionRef}
-//       className="relative z-0 w-screen h-screen mt-12 flex justify-center items-center overflow-hidden"
-//     >
-//       <img
-//         className="absolute z-20 h-full w-full object-cover"
-//         src={heroBannerSolid}
-//       />
-//       <img className="h-full w-full object-cover" src={heroBanner} />
-
-//       <h1
-//         className={`${pos} z-10 top-32 text-[240px] font-medium uppercase text-white tracking-tighter leading-[1] whitespace-nowrap`}
-//       >
-//         weyoung
-//       </h1>
-
-//       <div
-//         className={`${pos} w-[280px] z-20 left-20 top-8/12 flex flex-col justify-center gap-5`}
-//       >
-//         <h1 className="capitalize text-4xl text-white text-balance">
-//           Your journey to better health starts here!
-//         </h1>
-//         <Link
-//           to="/"
-//           className="uppercase w-max px-5 h-12 rounded-full leading-[1] bg-taupe-500 text-white flex justify-center items-center"
-//         >
-//           Explore products
-//         </Link>
-//       </div>
-
-//       <p
-//         className={`${pos} z-20 text-lg w-[460px] text-white right-16 top-8/12 text-pretty text-center`}
-//       >
-//         Discover plants-based supplements that enhance energy, immunity and
-//         overall wellness with reliable ingredients.
-//       </p>
-//     </section>
-//   );
-// };
+function Hero() {
+  return (
+    <section className="relative z-0 w-screen h-screen mt-12 flex justify-center items-center overflow-hidden">
+      <img
+        className="absolute z-20 h-full w-full object-cover"
+        src={heroBannerSolid}
+      />
+      <img className="h-full w-full object-cover" src={heroBanner} />
+      <h1 className="absolute z-10 top-24 text-[240px] font-medium uppercase text-white tracking-tighter leading-[1] whitespace-nowrap">
+        weyoung
+      </h1>
+      <div className="absolute w-[280px] z-10 left-20 top-7/12 flex flex-col justify-center gap-5">
+        <h1 className="capitalize text-4xl text-white text-balance">
+          Yuor journey to better health start here!
+        </h1>
+        <Link
+          to="/"
+          className="uppercase w-max px-5 h-12 rounded-full leading-[1] bg-taupe-500 text-white flex justify-center items-center"
+        >
+          Explore products
+        </Link>
+      </div>
+      <p className="absolute z-10 text-lg w-[460px] text-white right-16 top-7/12 text-pretty text-center">
+        Discover plants-based supplements that enhance energy, Immurity and
+        overall wellness with reliable ingrediant.
+      </p>
+    </section>
+  );
+}
 
 function Store() {
   return (
-    <div className="w-screen flex flex-col gap-10 px-2.5 my-10">
+    <div className="w-screen flex flex-col gap-10 px-2.5 my-14">
       <div className="w-full flex justify-between items-center">
         <div className="flex flex-col gap-1">
           <h1 className="uppercase text-4xl font-semibold text-gray-800">
@@ -171,54 +138,9 @@ function Store() {
   );
 }
 
-function Hero() {
-  return (
-    <section className="relative z-0 w-screen h-screen mt-12 flex justify-center items-center overflow-hidden">
-      <img
-        className="absolute z-20 h-full w-full object-cover"
-        src={heroBannerSolid}
-      />
-      <img className="h-full w-full object-cover" src={heroBanner} />
-      {/* <video
-        className="h-full w-full object-cover"
-        playsInline
-        autoPlay
-        loop
-        muted
-        src={HeroVideo}
-      ></video> */}
-      {/* <video
-        className="absolute z-20 h-full w-full object-cover"
-        playsInline
-        autoPlay
-        loop
-        muted
-        src={HeroVideoTransparent}
-      ></video> */}
-      <h1 className="absolute z-10 top-22 text-[240px] font-medium uppercase text-white tracking-tighter leading-[1] whitespace-nowrap">
-        weyoung
-      </h1>
-      <div className="absolute w-[280px] z-10 left-20 top-7/12 flex flex-col justify-center gap-5">
-        <h1 className="capitalize text-4xl text-white text-balance">
-          Yuor journey to better health start here!
-        </h1>
-        <Link
-          to="/"
-          className="uppercase w-max px-5 h-12 rounded-full leading-[1] bg-taupe-500 text-white flex justify-center items-center"
-        >
-          Explore products
-        </Link>
-      </div>
-      <p className="absolute z-10 text-lg w-[460px] text-white right-16 top-7/12 text-pretty text-center">
-        Discover plants-based supplements that enhance energy, Immurity and
-        overall wellness with reliable ingrediant.
-      </p>
-    </section>
-  );
-}
 function NewArrival() {
   return (
-    <div className="w-screen flex flex-col px-2.5 gap-10">
+    <div className="w-screen flex flex-col px-2.5 gap-14">
       <div className="w-full flex justify-between items-center">
         <h1 className="uppercase text-4xl font-semibold text-gray-800">
           New Arrivals
@@ -241,7 +163,7 @@ function NewArrival() {
 }
 function BestSeller() {
   return (
-    <div className="w-screen flex flex-col px-2.5 gap-10">
+    <div className="w-screen flex flex-col px-2.5 gap-14">
       <div className="w-full flex justify-between items-center">
         <h1 className="uppercase text-4xl font-semibold text-gray-800">
           Best Seller
@@ -264,7 +186,7 @@ function BestSeller() {
 }
 function UltimateSaving() {
   return (
-    <div className="w-screen flex flex-col px-2.5 gap-10 mt-10">
+    <div className="w-screen flex flex-col px-2.5 gap-14 mt-14">
       <div className="w-full flex justify-between items-center">
         <h1 className="uppercase text-4xl font-semibold text-gray-800">
           Ultimate Saving
@@ -312,7 +234,7 @@ function Collection() {
   const [isSlide, setIsSlide] = useState(0);
   const getLen = collection.length * 100 - 100;
   return (
-    <div className="w-screen flex flex-col gap-10 my-10 px-2.5">
+    <div className="w-screen flex flex-col gap-14 my-14 px-2.5">
       <div className="w-full flex justify-between items-center">
         <h1 className="uppercase text-4xl font-semibold text-gray-800">
           All Collection New In
